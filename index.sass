@@ -6,6 +6,9 @@ $nav: {{ site.style.nav }}
 $margin: {{ site.style.margin }}
 $padding: {{ site.style.padding }}
 
+html
+  background-color: $nav
+
 body
   display: flex
   background-color: $body
@@ -47,7 +50,7 @@ footer a
   font-weight: 300
 
 article, body > header, body > footer
-  padding: 1em $padding
+  padding: 1em calc($padding - 6.5em)
 
 body > header, body > footer
   background-color: $nav
